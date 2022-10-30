@@ -58,7 +58,7 @@ def volcano_map():
     # Create a HTML map object for string injection
     html = """
     <h4>Volcano information:</h4>
-    Name: <a href="https://www.google.com/search?q=%s" target="_blank">%s</a><br>
+    Name: <a href="https://www.google.com/search?q=%s volcano" target="_blank">%s</a><br>
     Location: %s <br>
     Height: %s m <br>
     """
