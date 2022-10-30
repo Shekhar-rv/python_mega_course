@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_027877204f4fb3bbcab9b4b772404a46 {
+                #map_1aa8fb0f1f8a2e9743eebebf636227f5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_027877204f4fb3bbcab9b4b772404a46" ></div>
+            <div class="folium-map" id="map_1aa8fb0f1f8a2e9743eebebf636227f5" ></div>
         
 </body>
 <script>    
     
-            var map_027877204f4fb3bbcab9b4b772404a46 = L.map(
-                "map_027877204f4fb3bbcab9b4b772404a46",
+            var map_1aa8fb0f1f8a2e9743eebebf636227f5 = L.map(
+                "map_1aa8fb0f1f8a2e9743eebebf636227f5",
                 {
                     center: [53.383331, -1.466667],
                     crs: L.CRS.EPSG3857,
@@ -55,9 +55,68 @@
 
         
     
-            var tile_layer_0d69d90433f94d54352d13defe62eeb7 = L.tileLayer(
+            var tile_layer_4177f40ebab95c00d6c9591e894ef883 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_027877204f4fb3bbcab9b4b772404a46);
+            ).addTo(map_1aa8fb0f1f8a2e9743eebebf636227f5);
         
+    
+            var feature_group_c0802a9d3906a269fcb4ec4313df3c31 = L.featureGroup(
+                {}
+            ).addTo(map_1aa8fb0f1f8a2e9743eebebf636227f5);
+        
+    
+            var marker_3d04d1d3839d74861002623bce3f38de = L.marker(
+                [53.3785, -1.4663],
+                {}
+            ).addTo(feature_group_c0802a9d3906a269fcb4ec4313df3c31);
+        
+    
+            var icon_070f31ae73ac59746eef26e7ebdcc56d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3d04d1d3839d74861002623bce3f38de.setIcon(icon_070f31ae73ac59746eef26e7ebdcc56d);
+        
+    
+        var popup_41b74fb53f1b3e0388a3c9607e349ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a172c4386138c677f3f882840564c189 = $(`<div id="html_a172c4386138c677f3f882840564c189" style="width: 100.0%; height: 100.0%;">Sheffield Hallam University</div>`)[0];
+                popup_41b74fb53f1b3e0388a3c9607e349ac0.setContent(html_a172c4386138c677f3f882840564c189);
+            
+        
+
+        marker_3d04d1d3839d74861002623bce3f38de.bindPopup(popup_41b74fb53f1b3e0388a3c9607e349ac0)
+        ;
+
+        
+    
+    
+            var marker_8252756734a427918865f0e191c4985a = L.marker(
+                [53.3814, -1.4884],
+                {}
+            ).addTo(feature_group_c0802a9d3906a269fcb4ec4313df3c31);
+        
+    
+            var icon_f54a1a1a04b35ffae4cad51612e04f1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8252756734a427918865f0e191c4985a.setIcon(icon_f54a1a1a04b35ffae4cad51612e04f1a);
+        
+    
+        var popup_c701850a6a586b018a8146f40c138515 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66d7be8a4a52818d436ecf9947f09e68 = $(`<div id="html_66d7be8a4a52818d436ecf9947f09e68" style="width: 100.0%; height: 100.0%;">Sheffield University</div>`)[0];
+                popup_c701850a6a586b018a8146f40c138515.setContent(html_66d7be8a4a52818d436ecf9947f09e68);
+            
+        
+
+        marker_8252756734a427918865f0e191c4985a.bindPopup(popup_c701850a6a586b018a8146f40c138515)
+        ;
+
+        
+    
 </script>
