@@ -1,8 +1,8 @@
 import folium
 import pandas as pd
 
-data = pd.read_csv("Volcanoes.txt")
-
+# Read the volcano data as a pandas dataframe
+data = pd.read_csv("./data/Volcanoes.txt")
 
 def sheffield_map():
     # Create a map object
@@ -76,7 +76,7 @@ def volcano_map():
     # Add a population layer to the map using a GeoJson file
     fg_population.add_child(
         folium.GeoJson(
-            data=open("world.json", "r", encoding="utf-8-sig").read(),
+            data=open("./data/world.json", "r", encoding="utf-8-sig").read(),
             style_function=lambda x: {
                 "fillColor": "green"
                 if x["properties"]["POP2005"] < 10000000
