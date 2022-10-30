@@ -89,7 +89,7 @@ def volcano_map():
 
     # Add feature group and add marker
     fg_volcano = folium.FeatureGroup(name="Volcano Layer")
-    
+
     # Add a volcano layer to the map using the csv file
     for item in range(len(data)):
         iframe = folium.IFrame(
@@ -121,7 +121,7 @@ def volcano_map():
                 color="grey",
             )
         )
-    
+
     # Add feature groups and and layer control to the map
     map.add_child(fg_population)
     map.add_child(fg_volcano)
@@ -129,6 +129,7 @@ def volcano_map():
 
     # Save the map
     map.save("volcano_map.html")
+
 
 if __name__ == "__main__":
     sheffield_map()
