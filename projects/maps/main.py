@@ -4,6 +4,7 @@ import pandas as pd
 # Read the volcano data as a pandas dataframe
 data = pd.read_csv("./data/Volcanoes.txt")
 
+
 def sheffield_map():
     # Create a map object
     map = folium.Map(
