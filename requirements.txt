@@ -1,4 +1,5 @@
+black
 pandas
 numpy
 folium
-black
+opencv-python
