@@ -6,7 +6,7 @@ while True:
     user_acton = (
         str(
             input(
-                "What would you like to do?\nType 'add' to add new items or 'show' to show the items.\nType 'exit' to exit!\nEnter your action: "
+                "What would you like to do?\nType 'add' to add new items or 'edit' to edit items or 'show' to show the items.\nType 'exit' to exit!\nEnter your action: "
             )
         )
         .lower()
@@ -20,6 +20,9 @@ while True:
         case "show" | "list":
             for todo in todos:
                 print(todo)
+        case "edit":
+            number = int(input("Enter the number of the todo you want to edit: "))
+            todos[number - 1] = str(input("Enter the new todo: "))
         case "exit" | "quit":
             break
         case _:
