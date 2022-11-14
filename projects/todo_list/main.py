@@ -6,7 +6,7 @@ while True:
     user_acton = (
         str(
             input(
-                "What would you like to do?\nType 'add' to add new items or 'edit' to edit items or 'show' to show the items.\nType 'exit' to exit!\nEnter your action: "
+                "What would you like to do?\nType 'add' or 'edit' or 'show' or type 'exit' or type 'complete': "
             )
         )
         .lower()
@@ -18,11 +18,14 @@ while True:
             todo = input("Enter a todo: ")
             todos.append(todo)
         case "show" | "list":
-            for todo in todos:
-                print(todo)
+            for index, todo in enumerate(todos, start=1):
+                print(f"{index}. {todo}")
         case "edit":
             number = int(input("Enter the number of the todo you want to edit: "))
             todos[number - 1] = str(input("Enter the new todo: "))
+        case "complete":
+            number = int(input("Enter the number of the todo you want to complete: "))
+            todos.pop(number - 1)
         case "exit" | "quit":
             break
         case _:
